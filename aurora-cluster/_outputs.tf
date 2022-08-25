@@ -9,3 +9,11 @@ output "aurora_reader_endpoint" {
 output "aurora_database_name" {
   value = aws_rds_cluster.aurora_cluster.database_name
 }
+
+output "aurora_username" {
+  value = aws_rds_cluster.aurora_cluster.master_username
+}
+
+output "aurora_password" {
+  value = aws_rds_cluster.aurora_cluster.master_password
+}
